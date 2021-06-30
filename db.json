@@ -1,0 +1,25 @@
+{
+    "tasks" :[
+        {   "id" : 1, 
+            "title" : "Post 1",
+            "person" : "Beto",
+            "state" : "to-do",
+            "deadline" : 1626373532,
+            "created" : 1625077532
+        },
+        {   "id" : 2, 
+            "title" : "Post 1",
+            "person" : "Beto",
+            "state" : "in-progress",
+            "deadline" : 1626373532,
+            "created" : 1625077532
+        },
+        {   "id" : 3, 
+            "title" : "Post 1",
+            "person" : "Beto",
+            "state" : "to-do",
+            "deadline" : 1626373532,
+            "created" : 1625077532
+        }
+    ]
+}
