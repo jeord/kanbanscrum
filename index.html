@@ -18,7 +18,7 @@
             <h1>Kanban Scrum</h1>
             <div class="container">
                 <h2>To DO</h2>
-                <div class="task-container">
+                <div class="task-container" id="toDoTasks">
                     <article class="task">
                         <h3>Créer JSON du projet</h3>
                         <p>Responsable: <span> Yo mero</span></p>
@@ -28,7 +28,7 @@
             </div>
             <div class="container">
                 <h2>In progress</h2>
-                <div class="task-container">
+                <div class="task-container" id="inprogressTasks">
                     <article class="task">
                         <h3>Créer JSON du projet</h3>
                         <p>Responsable: <span> Yo mero</span></p>
@@ -38,7 +38,7 @@
             </div>
             <div class="container">
                 <h2>Done</h2>
-                <div class="task-container">
+                <div class="task-container" id="doneTasks">
                     <article class="task">
                         <h3>Créer JSON du projet</h3>
                         <p>Responsable: <span> Yo mero</span></p>
@@ -84,5 +84,7 @@
             </div>
         </div>
     </aside>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/petitions.js"></script>
 </body>
 </html>
