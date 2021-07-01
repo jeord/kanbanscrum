@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>KanbanScrum</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div class="header-container">
-            <img style="width: 100px; height: 100px;" src="/img/logo.png" alt="">
+            <img style="width: 200px; height: 50px;" src="/img/logo.png" alt="">
             <button id="newTask" class="button">Créer une tâche</button>
         </div>
     </header>
@@ -17,38 +18,26 @@
         <div class="main-container">
             <h1>Kanban Scrum</h1>
             <div class="container">
-                <h2>To DO</h2>
+                <h2>To Do</h2>
                 <div class="task-container" id="toDoTasks">
-                    <article class="task">
-                        <h3>Créer JSON du projet</h3>
-                        <p>Responsable: <span> Yo mero</span></p>
-                        <p>Plazo: <span>05/06/2021</span></p>
-                    </article>
+                    
                 </div>
             </div>
             <div class="container">
                 <h2>In progress</h2>
                 <div class="task-container" id="inprogressTasks">
-                    <article class="task">
-                        <h3>Créer JSON du projet</h3>
-                        <p>Responsable: <span> Yo mero</span></p>
-                        <p>Plazo: <span>05/06/2021</span></p>
-                    </article>
+                
                 </div>
             </div>
             <div class="container">
                 <h2>Done</h2>
                 <div class="task-container" id="doneTasks">
-                    <article class="task">
-                        <h3>Créer JSON du projet</h3>
-                        <p>Responsable: <span> Yo mero</span></p>
-                        <p>Plazo: <span>05/06/2021</span></p>
-                    </article>
+                
                 </div>
             </div>
         </div>
     </main>
-    <aside>
+    <aside class="" id="formElement">
         <div class="aside-container">
             <h2>Nouvelle tâche</h2>
             <div class="form-container">
@@ -77,7 +66,7 @@
                     </div>
                     <div class="action-container">
                         <button type="submit">Sauvegarder</button>
-                        <button type="reset">Annuler</button>
+                        <button id="cancelForm" type="reset">Annuler</button>
                     </div>
 
                 </form>
@@ -85,6 +74,16 @@
         </div>
     </aside>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/sortable.js"></script>
+
+    <script src="/scripts/helpers.js"></script>
+    <script src="/scripts/gestures.js"></script>
+    <script src="scripts/dates.js"></script>
     <script src="scripts/petitions.js"></script>
+    <script src="/scripts/drag.js"></script>
+    <script src="/scripts/form.js"></script>
+    
 </body>
 </html>
